@@ -1,0 +1,3 @@
+include ':app', ':takephoto_library', ':piclibrary'
+include ':ViewpagerIndicator'
+

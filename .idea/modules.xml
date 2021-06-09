@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ViewpagerIndicator/ViewpagerIndicator.iml" filepath="$PROJECT_DIR$/.idea/modules/ViewpagerIndicator/ViewpagerIndicator.iml" group="min/ViewpagerIndicator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="min/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/min.iml" filepath="$PROJECT_DIR$/.idea/modules/min.iml" group="min" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/piclibrary/piclibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/piclibrary/piclibrary.iml" group="min/piclibrary" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/takephoto_library/takephoto_library.iml" filepath="$PROJECT_DIR$/.idea/modules/takephoto_library/takephoto_library.iml" group="min/takephoto_library" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/v2_qgstak"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:id="@+id/p_head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.wy.minai.widget.MyButton
+                android:id="@+id/btn_top_out"
+                style="@style/normal_button"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/dlb_48"
+                app:is_replace="true"
+                app:press_bg="@mipmap/bh_50"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/normal_button"
+                android:layout_width="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="民爱商城"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:padding="8dp"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:editable="false"
+                android:background="@drawable/shapetc1"
+                android:textSize="14sp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@mipmap/v2_sousuo"
+                android:drawableRight="@mipmap/mb_angle_circle_right"
+                android:hint="搜索商品 - 好货等你"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/fasfa_comment_01"
+                android:id="@+id/tv_xiaoxi"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/gwc"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/maw_05"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="0,1,2,3,4"
+            android:stretchColumns="0,1,2,3,4"
+            android:collapseColumns=""
+            android:layout_marginTop="100dp"
+            android:background="@drawable/shadow2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="15dp">
+
+            <!-- android:shrinkColumns="0,1,2,3,4" 列数-->
+            <!-- android:stretchColumns="0,1,2,3,4" 拉伸-->
+            <!-- android:collapseColumns="" 隐藏-->
+
+            <TableRow
+                android:paddingTop="5dp">
+                <ImageView
+                    android:id="@+id/chexian"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99c1" />
+                <ImageView
+                    android:id="@+id/rengong"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99d2" />
+                <ImageView
+                    android:id="@+id/tv_xiuxian"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99d3" />
+                <ImageView
+                    android:id="@+id/gokaquan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99d4" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:id="@+id/jiadian"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99d5" />
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/chexiantx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="服装" />
+
+                <TextView
+                    android:id="@+id/rengongtx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="家电" />
+
+                <TextView
+                    android:id="@+id/tv_xiuxiant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="家纺" />
+
+                <TextView
+                    android:id="@+id/gokaquantx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="数码" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/jiadianx"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="家居" />
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="15dp">
+                <ImageView
+                    android:id="@+id/tv_jiayou"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99d6" />
+                <ImageView
+                    android:id="@+id/tv_nongzi"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99b7" />
+                <ImageView
+                    android:id="@+id/tv_lvyou"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99c8" />
+                <ImageView
+                    android:id="@+id/tiyandian"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99c9" />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/v2_qgu99c10" />
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_jiayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="珠宝" />
+
+                <TextView
+                    android:id="@+id/tv_nongzit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="箱包" />
+
+                <TextView
+                    android:id="@+id/tv_lvyout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="鞋子" />
+
+                <TextView
+                    android:id="@+id/tiyandiantx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="手表" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/gary"
+                    android:gravity="center"
+                    android:text="美妆" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/invis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#ffffff"
+            >
+
+            <com.wy.minai.widget.DropDownMenuplus.filter.DropDownMenu
+                android:id="@+id/dropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layout_loaddata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="测试" />
+
+                </LinearLayout>
+
+            </com.wy.minai.widget.DropDownMenuplus.filter.DropDownMenu>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/include_gridview" />
+   
+
+</LinearLayout>
